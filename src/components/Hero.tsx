@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const Hero = () => {
   return (
     <section
@@ -65,13 +63,10 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="flex-1 relative">
             <div className="aspect-square max-w-md mx-auto">
-              <Image
-                src="/two-fashionable-women-in-pink-and-orange-dresses.jpg"
+              <img
+                src="two-fashionable-women-in-pink-and-orange-dresses.jpg"
                 alt="Fashion models in colorful dresses"
-                width={800}
-                height={800}
                 className="w-full h-full object-cover rounded-2xl"
-                priority
               />
             </div>
           </div>
@@ -82,4 +77,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
 

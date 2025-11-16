@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const ColorSection = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-fika-hot-pink to-pink-500">
@@ -10,47 +8,36 @@ const ColorSection = () => {
             <div className="grid grid-cols-3 gap-4">
               <div className="col-span-1 space-y-4">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
-                  <Image
-                    src="/woman-in-pink-dress-fashion.jpg"
-                    alt="Fashion model in pink dress"
-                    width={400}
-                    height={400}
+                  <img
+                    src="woman-in-pink-dress-fashion.jpg"
+                    alt="Fashion model 1"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
-
               <div className="col-span-2">
                 <div className="aspect-[4/5] bg-white rounded-3xl overflow-hidden">
-                  <Image
-                    src="/three-women-in-pink-dresses-celebrating-fashion.jpg"
-                    alt="Three fashion models celebrating in pink dresses"
-                    width={800}
-                    height={1000}
+                  <img
+                    src="three-women-in-pink-dresses-celebrating-fashion.jpg"
+                    alt="Fashion models celebrating"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
-
               <div className="col-span-1 space-y-4">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
-                  <Image
-                    src="/woman-in-pink-outfit-fashion.jpg"
-                    alt="Fashion model in pink outfit"
-                    width={400}
-                    height={400}
+                  <img
+                    src="woman-in-pink-outfit-fashion.jpg"
+                    alt="Fashion model 2"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
-
               <div className="col-span-2">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
-                  <Image
-                    src="/woman-in-pink-dress-smiling.jpg"
-                    alt="Smiling fashion model in pink dress"
-                    width={400}
-                    height={400}
+                  <img
+                    src="woman-in-pink-dress-smiling.jpg"
+                    alt="Fashion model 3"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -61,9 +48,10 @@ const ColorSection = () => {
           {/* Content */}
           <div className="flex-1 text-white">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">
-              We're <span className="italic">passionate</span> about colour and
-              celebrating the <span className="italic">vibrant hues</span> and
-              the joyful feelings they bring when worn.
+              We&apos;re <span className="italic">passionate</span> about colour
+              and celebrating the{" "}
+              <span className="italic">vibrant hues</span> and the joyful
+              feelings they bring when worn.
             </h2>
             <p className="text-lg mb-6 leading-relaxed">
               Our goal is to empower every woman with confidence through vibrant

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 import { Product } from "../App";
 import { ArrowLeft, Heart, ShoppingCart } from "lucide-react";
 
@@ -41,15 +40,11 @@ const ProductPage = ({ product, onBack }: ProductPageProps) => {
           <div className="relative">
             <div className="sticky top-24">
               <div className="relative overflow-hidden rounded-2xl bg-gray-50">
-                <div className="w-full aspect-[3/4] relative">
-                  <Image
-                    src={product.image || "/placeholder.svg"}
-                    alt={product.name}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
-                  />
-                </div>
+                <img
+                  src={product.image || "placeholder.svg"}
+                  alt={product.name}
+                  className="w-full aspect-[3/4] object-cover"
+                />
                 {product.badge && (
                   <span
                     className={`absolute top-4 left-4 px-4 py-2 text-sm font-bold rounded-full ${

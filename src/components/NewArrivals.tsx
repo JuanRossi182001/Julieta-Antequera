@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Product } from "../App";
 
 interface NewArrivalsProps {
@@ -10,7 +9,7 @@ const products: Product[] = [
     id: 1,
     name: "Angel Printed Midi Skirt",
     price: "$95.00",
-    image: "/pink-printed-midi-skirt-fashion-model.jpg",
+    image: "pink-printed-midi-skirt-fashion-model.jpg",
     badge: "NEW IN",
     description:
       "Vibrant printed midi skirt perfect for making a statement. Made from breathable, responsibly-sourced fabric with a comfortable elastic waistband.",
@@ -20,7 +19,7 @@ const products: Product[] = [
     id: 2,
     name: "Black Cropped Rib Top",
     price: "$48.00",
-    image: "/black-cropped-rib-top-with-jeans.jpg",
+    image: "black-cropped-rib-top-with-jeans.jpg",
     badge: "NEW IN",
     description:
       "Classic cropped rib top that pairs perfectly with high-waisted bottoms. Soft, stretchy fabric ensures all-day comfort.",
@@ -30,7 +29,7 @@ const products: Product[] = [
     id: 3,
     name: "Black Relaxed Blazer",
     price: "$95.00",
-    image: "/olive-green-skirt-outfit-fashion.jpg",
+    image: "olive-green-skirt-outfit-fashion.jpg",
     badge: "NEW IN",
     description:
       "Elevated relaxed-fit blazer for effortless style. Tailored from premium sustainable materials with a modern silhouette.",
@@ -40,7 +39,7 @@ const products: Product[] = [
     id: 4,
     name: "Black Relaxed Sleeveless Top",
     price: "$58.00",
-    image: "/beige-skirt-black-top-fashion-model.jpg",
+    image: "beige-skirt-black-top-fashion-model.jpg",
     badge: "NEW IN",
     description:
       "Versatile sleeveless top with a relaxed fit. Perfect for layering or wearing solo in warmer weather.",
@@ -50,7 +49,7 @@ const products: Product[] = [
     id: 5,
     name: "Black Midi Dress",
     price: "$85.00",
-    image: "/black-midi-dress-fashion-model.jpg",
+    image: "black-midi-dress-fashion-model.jpg",
     badge: "SALE",
     description:
       "Elegant midi dress designed for any occasion. Features a flattering silhouette with sustainable fabric blend.",
@@ -71,15 +70,11 @@ const NewArrivals = ({ onProductClick }: NewArrivalsProps) => {
           {products.map((product) => (
             <div key={product.id} className="group cursor-pointer">
               <div className="relative mb-4 overflow-hidden rounded-lg">
-                <div className="w-full aspect-[3/4] relative">
-                  <Image
-                    src={product.image || "/placeholder.svg"}
-                    alt={product.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 20vw"
-                    className="object-cover group-hover:scale-105 transition duration-300"
-                  />
-                </div>
+                <img
+                  src={product.image || "placeholder.svg"}
+                  alt={product.name}
+                  className="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-300"
+                />
                 {product.badge && (
                   <span
                     className={`absolute top-3 left-3 px-3 py-1 text-xs font-bold rounded-full ${
@@ -118,4 +113,3 @@ const NewArrivals = ({ onProductClick }: NewArrivalsProps) => {
 };
 
 export default NewArrivals;
-
