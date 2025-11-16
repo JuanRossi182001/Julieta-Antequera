@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export',
   images: {
     unoptimized: true,
   },
-}
+  basePath: '/Julieta-Antequera',
+  assetPrefix: '/Julieta-Antequera/',
+};
 
-export default nextConfig
+export default nextConfig;
+
