@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  
+  --color-fika-pink: #ff69b4;
+  --color-fika-hot-pink: #ff1493;
+  --color-fika-orange: #ff6b35;
+  --color-fika-peach: #ffb3ba;
+  --color-fika-cream: #fff5f0;
+  --color-fika-purple: #9b59b6;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
