@@ -9,7 +9,7 @@ const ColorSection = () => {
               <div className="col-span-1 space-y-4">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
                   <img
-                    src="/foto1.jpeg"
+                    src="foto1.jpeg"
                     alt="Fashion model 1"
                     className="w-full h-full object-cover"
                   />
@@ -18,7 +18,7 @@ const ColorSection = () => {
               <div className="col-span-2">
                 <div className="aspect-[4/5] bg-white rounded-3xl overflow-hidden">
                   <img
-                    src="/foto2.jpeg"
+                    src="foto2.jpeg"
                     alt="Fashion models celebrating"
                     className="w-full h-full object-cover"
                   />
@@ -27,7 +27,7 @@ const ColorSection = () => {
               <div className="col-span-1 space-y-4">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
                   <img
-                    src="/foto3.jpeg"
+                    src="foto3.jpeg"
                     alt="Fashion model 2"
                     className="w-full h-full object-cover"
                   />
@@ -36,7 +36,7 @@ const ColorSection = () => {
               <div className="col-span-2">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
                   <img
-                    src="/foto4.jpeg"
+                    src="foto4.jpeg"
                     alt="Fashion model 3"
                     className="w-full h-full object-cover"
                   />
