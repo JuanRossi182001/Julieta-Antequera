@@ -1,20 +1,19 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Export estático para GitHub Pages
-  output: 'export',
+const isProd = process.env.NODE_ENV === "production";
 
-  // Evita problemas con next/image en static export
+const nextConfig = {
+  // Export estático para poder usar GitHub Pages
+  output: "export",
+
+  // Nada de optimización de imágenes del lado del servidor
   images: {
     unoptimized: true,
   },
 
-  // Este repo se llama "Julieta-Antequera"
-  // La página se sirve en:
-  // https://JuanRossi182001.github.io/Julieta-Antequera/
-  basePath: '/Julieta-Antequera',
-  assetPrefix: '/Julieta-Antequera/',
+  // En desarrollo (npm run dev): sin basePath
+  // En producción (npm run build para GitHub Pages): con basePath
+  basePath: isProd ? "/Julieta-Antequera" : "",
+  assetPrefix: isProd ? "/Julieta-Antequera/" : "",
 };
 
 export default nextConfig;
-
-

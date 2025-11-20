@@ -1,6 +1,6 @@
 const ColorSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-fika-hot-pink to-pink-500">
+    <section className="py-20 bg-gradient-to-br from-fika-olive to-fika-olive">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Images */}
@@ -9,7 +9,7 @@ const ColorSection = () => {
               <div className="col-span-1 space-y-4">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
                   <img
-                    src="woman-in-pink-dress-fashion.jpg"
+                    src="/foto1.jpeg"
                     alt="Fashion model 1"
                     className="w-full h-full object-cover"
                   />
@@ -18,7 +18,7 @@ const ColorSection = () => {
               <div className="col-span-2">
                 <div className="aspect-[4/5] bg-white rounded-3xl overflow-hidden">
                   <img
-                    src="three-women-in-pink-dresses-celebrating-fashion.jpg"
+                    src="/foto2.jpeg"
                     alt="Fashion models celebrating"
                     className="w-full h-full object-cover"
                   />
@@ -27,7 +27,7 @@ const ColorSection = () => {
               <div className="col-span-1 space-y-4">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
                   <img
-                    src="woman-in-pink-outfit-fashion.jpg"
+                    src="/foto3.jpeg"
                     alt="Fashion model 2"
                     className="w-full h-full object-cover"
                   />
@@ -36,7 +36,7 @@ const ColorSection = () => {
               <div className="col-span-2">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
                   <img
-                    src="woman-in-pink-dress-smiling.jpg"
+                    src="/foto4.jpeg"
                     alt="Fashion model 3"
                     className="w-full h-full object-cover"
                   />
@@ -45,38 +45,31 @@ const ColorSection = () => {
             </div>
           </div>
 
-          {/* Content */}
           <div className="flex-1 text-white">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">
-              We&apos;re <span className="italic">passionate</span> about colour
-              and celebrating the{" "}
-              <span className="italic">vibrant hues</span> and the joyful
-              feelings they bring when worn.
+              En Nona somos <span className="italic">apasionadas</span> por la memoria, la nostalgia y la calidez de la{" "}
+              <span className="italic">casa de la nona</span>.
             </h2>
             <p className="text-lg mb-6 leading-relaxed">
-              Our goal is to empower every woman with confidence through vibrant
-              design, embracing bold colour, encouraging women to celebrate
-              their differences in body type, age, beliefs and lifestyle
-              choices. Our vision is to transform life by making these colours
-              as much a part of everyday living as breathing, connecting
-              ourselves to something bigger, to life, to joy, to infinity,
-              compassion or forgiveness.
+              Creamos ropa inspirada en las abuelas argentinas: esas que con amor, paciencia y mucho sabor transmiten
+              sus tradiciones de generación en generación. Cada prenda nace de sus tejidos, sus colores y sus detalles,
+              llevando siempre un pedacito de hogar y de cultura argentina para que la lleves con vos todos los días.
             </p>
             <p className="text-lg mb-8 leading-relaxed">
-              Made in wider and designed in Manchester, UK...we are using yarn
-              (or hemp-sourced fabrics) and empowers women to celebrate and feel
-              secure. We sustainably source our stock, look after our artisans,
-              compensate our workforce fairly...always looking for partners who
-              share our values.
+              Queremos que nuestras prendas sean mucho más que ropa: sean historias que acompañan, recuerdos que
+              inspiran y un puente vivo con nuestras raíces. Cada diseño es un acto de cariño, un homenaje a esas
+              mujeres que tejieron nuestras vidas con sus manos y su corazón. Colaboramos con cosedoras artesanales,
+              visibilizando su arte y sus historias, construyendo juntas una comunidad que honra el pasado mientras
+              diseña el futuro.
             </p>
             <button className="bg-lime-300 text-gray-800 px-8 py-3 rounded-full font-bold hover:bg-lime-400 transition shadow-lg">
-              MORE ABOUT US
+              MÁS SOBRE NONA
             </button>
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ColorSection;
+export default ColorSection

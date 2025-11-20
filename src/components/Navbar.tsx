@@ -8,8 +8,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#hero" className="text-3xl font-bold text-fika-orange">
-            fika
+          <a href="#hero" className="text-3xl font-bold text-fika-black">
+            Nona
           </a>
 
           {/* Desktop Navigation */}

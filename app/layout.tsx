@@ -1,9 +1,9 @@
 import '../src/index.css'
 
 export const metadata = {
-  title: 'Fika - Responsibly Sourced Fashion',
-  description: 'Responsibly sourced clothing brand on a mission to change the future of fashion',
-    generator: 'v0.app'
+  title: 'Nona',
+  description: 'Nona',
+  generator: 'v0.app',
 }
 
 export default function RootLayout({
@@ -15,8 +15,16 @@ export default function RootLayout({
     <html lang="es">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        {/* Noto Serif en lugar de DM Sans */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>{children}</body>
     </html>

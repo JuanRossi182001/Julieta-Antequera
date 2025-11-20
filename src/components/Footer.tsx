@@ -5,9 +5,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-3xl font-bold text-fika-orange mb-4">fika</h3>
+            <h3 className="text-3xl font-bold text-fika-black mb-4">Nona</h3>
             <p className="text-gray-400">
-              Responsibly sourced clothing brand on a mission to change fashion.
+              La calidez de la casa de la nona.
             </p>
           </div>
 

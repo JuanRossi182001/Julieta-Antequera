@@ -7,52 +7,38 @@ interface NewArrivalsProps {
 const products: Product[] = [
   {
     id: 1,
-    name: "Angel Printed Midi Skirt",
+    name: "Campera de jean Nona",
     price: "$95.00",
-    image: "pink-printed-midi-skirt-fashion-model.jpg",
-    badge: "NEW IN",
+    image: "camperajean.jpeg",
     description:
-      "Vibrant printed midi skirt perfect for making a statement. Made from breathable, responsibly-sourced fabric with a comfortable elastic waistband.",
+      "Campera de jean oversize, con detalles a los costados, botones personalizados, forro receta y estampas exclusivas",
     sizes: ["XS", "S", "M", "L", "XL"],
   },
   {
     id: 2,
-    name: "Black Cropped Rib Top",
+    name: "Pollera Nona",
     price: "$48.00",
-    image: "black-cropped-rib-top-with-jeans.jpg",
-    badge: "NEW IN",
+    image: "pollera.jpg",
     description:
-      "Classic cropped rib top that pairs perfectly with high-waisted bottoms. Soft, stretchy fabric ensures all-day comfort.",
+    "Pollera larga de broderie con una sobre pollera corta que se une en la parte de las presillas mediante tiras que terminan en un moño",
     sizes: ["XS", "S", "M", "L", "XL"],
   },
   {
     id: 3,
-    name: "Black Relaxed Blazer",
+    name: "Remera Nona",
     price: "$95.00",
-    image: "olive-green-skirt-outfit-fashion.jpg",
-    badge: "NEW IN",
+    image: "remera.jpeg",
     description:
-      "Elevated relaxed-fit blazer for effortless style. Tailored from premium sustainable materials with a modern silhouette.",
+      "Remera oversize estampa exclusiva Nona",
     sizes: ["XS", "S", "M", "L", "XL"],
   },
   {
     id: 4,
-    name: "Black Relaxed Sleeveless Top",
+    name: "Top Nona",
     price: "$58.00",
-    image: "beige-skirt-black-top-fashion-model.jpg",
-    badge: "NEW IN",
+    image: "top.jpeg",
     description:
-      "Versatile sleeveless top with a relaxed fit. Perfect for layering or wearing solo in warmer weather.",
-    sizes: ["XS", "S", "M", "L", "XL"],
-  },
-  {
-    id: 5,
-    name: "Black Midi Dress",
-    price: "$85.00",
-    image: "black-midi-dress-fashion-model.jpg",
-    badge: "SALE",
-    description:
-      "Elegant midi dress designed for any occasion. Features a flattering silhouette with sustainable fabric blend.",
+      "Top de saplex embolsado doble con corte recto con estampa exclusiva.",
     sizes: ["XS", "S", "M", "L", "XL"],
   },
 ];
@@ -62,7 +48,7 @@ const NewArrivals = ({ onProductClick }: NewArrivalsProps) => {
     <section id="new-arrivals" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12">
-          Shop our <span className="text-fika-pink italic">New Arrivals</span>
+           <span style={{ color: "#6B8E23", fontStyle: "italic" }}>Nuevos lanzamientos</span>
         </h2>
 
         {/* Products Grid */}
@@ -99,13 +85,6 @@ const NewArrivals = ({ onProductClick }: NewArrivalsProps) => {
               </button>
             </div>
           ))}
-        </div>
-
-        {/* View All Button */}
-        <div className="text-center">
-          <button className="bg-fika-hot-pink text-white px-12 py-4 rounded-full font-bold hover:bg-fika-pink transition shadow-lg text-lg">
-            VIEW ALL PRODUCTS
-          </button>
         </div>
       </div>
     </section>
