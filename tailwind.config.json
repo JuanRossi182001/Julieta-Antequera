@@ -1,0 +1,14 @@
+{
+  "theme": {
+    "extend": {
+      "colors": {
+        "fika-pink": "#ff69b4",
+        "fika-hot-pink": "#ff1493",
+        "fika-orange": "#ff6b35",
+        "fika-peach": "#ffb3ba",
+        "fika-cream": "#fff5f0",
+        "fika-purple": "#9b59b6"
+      }
+    }
+  }
+}
