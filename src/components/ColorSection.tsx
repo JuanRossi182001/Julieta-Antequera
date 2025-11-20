@@ -27,7 +27,7 @@ const ColorSection = () => {
               <div className="col-span-1 space-y-4">
                 <div className="aspect-square bg-white rounded-full overflow-hidden">
                   <img
-                    src="foto3.jpeg"
+                    src="foto3.jpeg" // aaaa
                     alt="Fashion model 2"
                     className="w-full h-full object-cover"
                   />
@@ -71,5 +71,5 @@ const ColorSection = () => {
     </section>
   )
 }
-
+// comnennt comennnt
 export default ColorSection
